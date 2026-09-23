@@ -1,0 +1,115 @@
+/* ═══════════════════════════════════════════════════════════════
+   DESIGN SYSTEM — CSS VARIABLES
+   AI Engineer Portfolio | Jayanth T R
+═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ─── Color Palette ─────────────────────────────────────── */
+  --bg-primary:     #080c14;
+  --bg-secondary:   #0d1220;
+  --bg-card:        #111827;
+  --bg-card-hover:  #162236;
+  --bg-glass:       rgba(13, 18, 32, 0.7);
+  --bg-glass-light: rgba(255, 255, 255, 0.04);
+
+  /* Amber / Orange (replaces electric blue) */
+  --accent-blue:        #f59e0b;
+  --accent-blue-dim:    #d97706;
+  --accent-blue-glow:   rgba(245, 158, 11, 0.3);
+  --accent-blue-glow-sm:rgba(245, 158, 11, 0.12);
+
+  /* Violet — kept as secondary */
+  --accent-violet:      #8b5cf6;
+  --accent-violet-dim:  #7c3aed;
+  --accent-violet-glow: rgba(139, 92, 246, 0.3);
+
+  /* Orange tint (replaces cyan) */
+  --accent-cyan:        #fb923c;
+  --accent-cyan-dim:    #ea7316;
+
+  /* Gradient combos */
+  --gradient-primary:     linear-gradient(135deg, #f59e0b 0%, #fb923c 100%);
+  --gradient-blue-cyan:   linear-gradient(135deg, #f59e0b 0%, #fb923c 100%);
+  --gradient-violet-pink: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  --gradient-dark:        linear-gradient(135deg, #0d1220 0%, #111827 100%);
+  --gradient-hero:        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(245,158,11,0.12) 0%, transparent 70%);
+  --gradient-section:     linear-gradient(180deg, #080c14 0%, #0d1220 50%, #080c14 100%);
+
+
+  /* ─── Typography ────────────────────────────────────────── */
+  --font-sans:  'Lora', Georgia, 'Times New Roman', serif;
+  --font-mono:  'JetBrains Mono', 'Fira Code', monospace;
+
+  --text-primary:   #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted:     #64748b;
+  --text-accent:    #f59e0b;
+
+  /* Font Sizes */
+  --fs-xs:   0.75rem;
+  --fs-sm:   0.875rem;
+  --fs-base: 1rem;
+  --fs-md:   1.125rem;
+  --fs-lg:   1.25rem;
+  --fs-xl:   1.5rem;
+  --fs-2xl:  1.875rem;
+  --fs-3xl:  2.25rem;
+  --fs-4xl:  3rem;
+  --fs-5xl:  3.75rem;
+  --fs-6xl:  4.5rem;
+
+  /* Font Weights */
+  --fw-light:  300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semi:   600;
+  --fw-bold:   700;
+  --fw-black:  900;
+
+  /* ─── Spacing ───────────────────────────────────────────── */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ─── Border & Radius ───────────────────────────────────── */
+  --border-color:       rgba(255, 255, 255, 0.06);
+  --border-color-hover: rgba(245, 158, 11, 0.45);
+  --border-accent:      rgba(245, 158, 11, 0.5);
+
+  --radius-sm:  0.375rem;
+  --radius-md:  0.75rem;
+  --radius-lg:  1rem;
+  --radius-xl:  1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+
+  /* ─── Shadows ───────────────────────────────────────────── */
+  --shadow-sm:     0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md:     0 4px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg:     0 8px 40px rgba(0, 0, 0, 0.6);
+  --shadow-blue:   0 0 30px rgba(245, 158, 11, 0.2);
+  --shadow-violet: 0 0 30px rgba(139, 92, 246, 0.2);
+  --shadow-glow:   0 0 60px rgba(245, 158, 11, 0.15), 0 0 120px rgba(251, 146, 60, 0.08);
+
+  /* ─── Transitions ───────────────────────────────────────── */
+  --transition-fast:   150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow:   400ms ease;
+  --transition-spring: 350ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ─── Layout ────────────────────────────────────────────── */
+  --container-max: 1100px;
+  --container-md:  900px;
+  --nav-height:    70px;
+  --section-padding: var(--space-24) 0;
+}
