@@ -129,7 +129,7 @@ export function createNavbar() {
     .nav-logo-text {
       display: flex;
       flex-direction: column;
-      gap: 1px;
+      gap: 5px;
     }
 
     .logo-name {
@@ -148,7 +148,7 @@ export function createNavbar() {
     }
 
     .logo-role {
-      font-size: 0.6rem;
+      font-size: 0.65rem;
       font-weight: var(--fw-medium);
       letter-spacing: 0.18em;
       text-transform: uppercase;

@@ -16,9 +16,15 @@ export function createAbout() {
       <div class="about-grid">
         <div class="about-visual reveal-left">
           <div class="about-avatar-wrapper">
-            <div class="about-avatar-ring"></div>
+            <div class="about-avatar-glow"></div>
             <div class="about-avatar">
-              <div class="about-avatar-inner">JTR</div>
+              <img
+                src="/profile.jpg"
+                alt="Jayanth T R — AI Engineer"
+                class="about-avatar-img"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <div class="about-avatar-fallback">JTR</div>
             </div>
             <div class="about-avatar-badge">
               <span>🤖</span>
@@ -98,7 +104,7 @@ export function createAbout() {
 
           <div class="about-actions reveal">
             <a href="#projects" class="btn btn-primary btn-md">View My Projects</a>
-            <a href="/resume.pdf" download="Jayanth_TR_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-md">Download Resume</a>
+            <a href="/jayanth-resume.pdf" download="Jayanth_TR_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-md">Download Resume</a>
           </div>
         </div>
       </div>
@@ -130,12 +136,12 @@ export function createAbout() {
 
     .about-grid {
       display: grid;
-      grid-template-columns: 280px 1fr;
+      grid-template-columns: 320px 1fr;
       gap: var(--space-10);
       align-items: center;
     }
 
-    /* Avatar */
+    /* ── Photo Avatar ──────────────────────────────────── */
     .about-avatar-wrapper {
       position: relative;
       display: flex;
@@ -144,31 +150,61 @@ export function createAbout() {
       margin-bottom: var(--space-3);
     }
 
-    .about-avatar-ring {
+    /* Outer glow pulse */
+    .about-avatar-glow {
       position: absolute;
-      width: 130px;
-      height: 130px;
+      width: 220px;
+      height: 220px;
       border-radius: 50%;
-      border: 2px solid transparent;
-      background: linear-gradient(var(--bg-secondary), var(--bg-secondary)) padding-box,
-                  var(--gradient-primary) border-box;
-      animation: spin 10s linear infinite;
+      background: radial-gradient(circle, rgba(245,158,11,0.18) 0%, transparent 70%);
+      animation: aboutGlowPulse 3s ease-in-out infinite;
+      pointer-events: none;
     }
 
+    @keyframes aboutGlowPulse {
+      0%, 100% { transform: scale(1);   opacity: 0.6; }
+      50%       { transform: scale(1.12); opacity: 1; }
+    }
+
+    /* Photo circle */
     .about-avatar {
-      width: 110px;
-      height: 110px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
-      background: var(--gradient-primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden;
       position: relative;
       z-index: 1;
-      box-shadow: 0 0 30px var(--accent-blue-glow);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+      animation: aboutImgFloat 5s ease-in-out infinite;
     }
 
-    .about-avatar-inner {
+    @keyframes aboutImgFloat {
+      0%, 100% { transform: translateY(0);   }
+      50%       { transform: translateY(-6px); }
+    }
+
+    .about-avatar-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      border-radius: 50%;
+      transition: transform 0.5s ease;
+    }
+
+    .about-avatar:hover .about-avatar-img {
+      transform: scale(1.06);
+    }
+
+    /* Fallback initials (hidden when photo loads) */
+    .about-avatar-fallback {
+      display: none;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      background: var(--gradient-primary);
       font-size: 1.85rem;
       font-weight: var(--fw-black);
       color: #080c14;
