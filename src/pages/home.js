@@ -98,12 +98,14 @@ export function createHome() {
   style.textContent = `
     .hero-section {
       position: relative;
-      min-height: calc(100vh - var(--nav-height));
+      min-height: 100vh;
       display: flex;
       align-items: center;
       overflow: hidden;
       background: var(--bg-primary);
-      padding-bottom: var(--space-6);
+      padding-top: calc(var(--nav-height) + var(--space-8));
+      padding-bottom: var(--space-8);
+      box-sizing: border-box;
     }
 
     #neural-canvas {
@@ -139,9 +141,10 @@ export function createHome() {
       grid-template-columns: 1.15fr 0.85fr;
       gap: var(--space-8);
       align-items: center;
-      padding-top: calc(var(--nav-height) + var(--space-3));
+      padding-top: var(--space-4);
       padding-bottom: var(--space-4);
       max-width: 1080px;
+      width: 100%;
     }
 
     .hero-content {
@@ -312,6 +315,17 @@ export function createHome() {
       box-shadow: 0 0 12px var(--accent-violet);
     }
 
+
+    @media (min-width: 901px) {
+      .hero-section {
+        min-height: 100vh;
+        padding-top: calc(var(--nav-height) + var(--space-12));
+        padding-bottom: var(--space-10);
+      }
+      .hero-container {
+        padding-top: var(--space-6);
+      }
+    }
 
     @media (max-width: 900px) {
       .hero-section {

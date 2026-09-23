@@ -9,6 +9,8 @@ import { createNavbar, initNavbar } from './components/navbar.js';
 import { createHome, initHome } from './pages/home.js';
 import { createAbout } from './pages/about.js';
 import { createSkills, initSkills } from './pages/skills.js';
+import { createAiEngineering, initAiEngineering } from './pages/aiEngineering.js';
+import { createAiArchitecture, initAiArchitecture } from './pages/aiArchitecture.js';
 import { createExperience, initExperience } from './pages/experience.js';
 import { createProjects, initProjects } from './pages/projects.js';
 import { createEducation } from './pages/education.js';
@@ -41,6 +43,8 @@ function renderPortfolio() {
     createHome(),
     createAbout(),
     createSkills(),
+    createAiEngineering(),
+    createAiArchitecture(),
     createExperience(),
     createProjects(),
     createEducation(),
@@ -54,6 +58,8 @@ function renderPortfolio() {
     initNavbar();
     initHome();
     initSkills();
+    initAiEngineering();
+    initAiArchitecture();
     initExperience();
     initProjects();
     initContact();
