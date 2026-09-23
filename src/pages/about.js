@@ -108,11 +108,11 @@ export function createAbout() {
   const style = document.createElement('style');
   style.textContent = `
     #about {
-      min-height: 100vh;
+      min-height: auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: var(--space-8) 0;
+      padding: var(--space-10) 0 var(--space-16) 0;
       box-sizing: border-box;
     }
 
@@ -318,7 +318,7 @@ export function createAbout() {
     @media (max-width: 900px) {
       #about {
         min-height: auto;
-        padding: var(--space-16) 0;
+        padding: var(--space-6) 0 var(--space-12) 0;
       }
       .about-grid {
         grid-template-columns: 1fr;
@@ -333,6 +333,9 @@ export function createAbout() {
     }
 
     @media (max-width: 640px) {
+      #about {
+        padding: var(--space-4) 0 var(--space-10) 0;
+      }
       .about-visual { grid-template-columns: 1fr; }
       .about-highlights { grid-template-columns: 1fr; }
       .about-actions { flex-direction: column; }

@@ -91,10 +91,6 @@ export function createHome() {
       </div>
     </div>
 
-    <div class="hero-scroll-hint reveal" aria-label="Scroll down">
-      <span class="hero-scroll-text">Scroll to explore</span>
-      <div class="hero-scroll-arrow"></div>
-    </div>
   `;
 
   // Inject styles
@@ -102,11 +98,12 @@ export function createHome() {
   style.textContent = `
     .hero-section {
       position: relative;
-      min-height: 100vh;
+      min-height: calc(100vh - var(--nav-height));
       display: flex;
       align-items: center;
       overflow: hidden;
       background: var(--bg-primary);
+      padding-bottom: var(--space-6);
     }
 
     #neural-canvas {
@@ -315,46 +312,18 @@ export function createHome() {
       box-shadow: 0 0 12px var(--accent-violet);
     }
 
-    /* Scroll hint */
-    .hero-scroll-hint {
-      position: absolute;
-      bottom: var(--space-2);
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2px;
-      z-index: 1;
-      opacity: 0.7;
-    }
-
-    @media (max-height: 700px) {
-      .hero-scroll-hint {
-        display: none;
-      }
-    }
-
-    .hero-scroll-text {
-      font-size: var(--fs-xs);
-      color: var(--text-muted);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
-    .hero-scroll-arrow {
-      width: 24px;
-      height: 24px;
-      border-right: 2px solid var(--text-muted);
-      border-bottom: 2px solid var(--text-muted);
-      transform: rotate(45deg);
-      animation: float 2s ease-in-out infinite;
-    }
 
     @media (max-width: 900px) {
+      .hero-section {
+        min-height: auto;
+        padding-top: calc(var(--nav-height) + var(--space-4));
+        padding-bottom: var(--space-4);
+      }
       .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
+        padding-top: 0;
+        padding-bottom: 0;
       }
       .hero-badge { margin: 0 auto; }
       .hero-stats { margin: 0 auto; }
@@ -364,11 +333,52 @@ export function createHome() {
 
     @media (max-width: 600px) {
       .hero-stats {
-        flex-direction: column;
-        gap: var(--space-3);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--space-1);
+        padding: var(--space-2) var(--space-2);
+        width: 100%;
+        max-width: 440px;
+        margin: 0 auto;
       }
-      .hero-stat-divider { width: 60px; height: 1px; }
-      .hero-actions { flex-direction: column; align-items: center; }
+      .hero-stat {
+        flex: 1;
+        min-width: 0;
+        text-align: center;
+      }
+      .hero-stat-value {
+        font-size: var(--fs-base);
+      }
+      .hero-stat-label {
+        font-size: 0.65rem;
+        white-space: normal;
+        line-height: 1.15;
+      }
+      .hero-stat-divider {
+        width: 1px;
+        height: 24px;
+        background: var(--border-color);
+        flex-shrink: 0;
+      }
+      .hero-actions {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-2);
+        width: 100%;
+      }
+      .hero-actions .btn {
+        padding: 0.55rem 0.75rem;
+        font-size: 0.75rem;
+        gap: 0.35rem;
+      }
+      .hero-actions .btn svg {
+        width: 13px;
+        height: 13px;
+      }
     }
   `;
   document.head.appendChild(style);
