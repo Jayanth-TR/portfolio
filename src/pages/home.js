@@ -36,8 +36,8 @@ export function createHome() {
           </div>
           <div class="hero-stat-divider" aria-hidden="true"></div>
           <div class="hero-stat">
-            <span class="hero-stat-value gradient-text">GenAI</span>
-            <span class="hero-stat-label">Generative AI</span>
+            <span class="hero-stat-value gradient-text">Agents</span>
+            <span class="hero-stat-label">AI Agents & GenAI</span>
           </div>
           <div class="hero-stat-divider" aria-hidden="true"></div>
           <div class="hero-stat">
@@ -46,8 +46,8 @@ export function createHome() {
           </div>
           <div class="hero-stat-divider" aria-hidden="true"></div>
           <div class="hero-stat">
-            <span class="hero-stat-value gradient-text">AI Apps</span>
-            <span class="hero-stat-label">Development</span>
+            <span class="hero-stat-value gradient-text">GenAI</span>
+            <span class="hero-stat-label">Generative AI</span>
           </div>
         </div>
 
@@ -71,7 +71,7 @@ export function createHome() {
         <div class="hero-card-stack">
           <div class="hero-card hero-card-1">
             <div class="hero-card-icon">🤖</div>
-            <span>Generative AI</span>
+            <span>AI Agents</span>
           </div>
           <div class="hero-card hero-card-2">
             <div class="hero-card-icon">🧠</div>
@@ -79,11 +79,11 @@ export function createHome() {
           </div>
           <div class="hero-card hero-card-3">
             <div class="hero-card-icon">⚡</div>
-            <span>FastAPI & Python</span>
+            <span>Tool Calling</span>
           </div>
           <div class="hero-card hero-card-4">
-            <div class="hero-card-icon">☁️</div>
-            <span>AWS Cloud</span>
+            <div class="hero-card-icon">✨</div>
+            <span>Generative AI</span>
           </div>
           <div class="hero-ring" aria-hidden="true"></div>
           <div class="hero-ring hero-ring-2" aria-hidden="true"></div>
@@ -403,12 +403,11 @@ export function createHome() {
 export function initHome() {
   // Typing animation
   const phrases = [
-    'Generative AI',
+    'AI Agents',
     'Large Language Models',
     'RAG Systems',
-    'AI Chatbots',
-    'Prompt Engineering',
-    'AI-powered Applications',
+    'Tool Calling',
+    'Generative AI',
   ];
   const typeEl = document.getElementById('hero-type');
   if (typeEl) {

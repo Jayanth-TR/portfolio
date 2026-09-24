@@ -63,27 +63,33 @@ export function createAbout() {
           <div class="about-text">
             <p>
               I'm <strong>Jayanth T R</strong>, an AI Engineer based in Bengaluru, India, with over
-              <strong>1.6+ years of hands-on experience</strong> building production-ready AI applications.
+              <strong>1.6+ years of hands-on experience</strong> building production-ready AI systems and applications.
             </p>
             <p>
-              Specializing in <strong>Generative AI, LLMs, and RAG systems</strong> — designing and deploying intelligent solutions using
-              <strong>Python, FastAPI</strong>, and modern AI APIs including <strong>Google Gemini, OpenAI, and Hugging Face</strong>. Also working with ChromaDB vector search, with beginner-level experience in AWS cloud deployment and Docker.
+              Specializing in <strong>AI Agents and Generative AI</strong> — building LLM-based systems capable of dynamically selecting and invoking tools based on user intent. Experienced with <strong>RAG, Prompt Engineering, and LLM integrations</strong> using <strong>Python, FastAPI</strong>, and modern AI APIs including <strong>OpenAI, Google Gemini, and Hugging Face</strong>. Also working with ChromaDB vector search, AWS cloud deployment, and Docker.
             </p>
           </div>
 
           <div class="about-highlights reveal stagger-children">
             <div class="about-highlight">
+              <div class="about-highlight-icon">🤖</div>
+              <div>
+                <strong>AI Agents & Generative AI</strong>
+                <span>LLM-based AI agents, tool calling, function calling, dynamic tool selection</span>
+              </div>
+            </div>
+            <div class="about-highlight">
               <div class="about-highlight-icon">🧠</div>
               <div>
                 <strong>Generative AI & LLMs</strong>
-                <span>RAG, prompt engineering, fine-tuning workflows</span>
+                <span>RAG, prompt engineering, AI-powered workflow automation</span>
               </div>
             </div>
             <div class="about-highlight">
               <div class="about-highlight-icon">🔌</div>
               <div>
                 <strong>AI API Integration</strong>
-                <span>Gemini, OpenAI, Hugging Face ecosystems</span>
+                <span>OpenAI, Google Gemini, Hugging Face ecosystems</span>
               </div>
             </div>
             <div class="about-highlight">
@@ -91,13 +97,6 @@ export function createAbout() {
               <div>
                 <strong>Backend & Deployment</strong>
                 <span>FastAPI, Python, Docker, AWS</span>
-              </div>
-            </div>
-            <div class="about-highlight">
-              <div class="about-highlight-icon">🗄️</div>
-              <div>
-                <strong>Data & Vector Stores</strong>
-                <span>PostgreSQL, MongoDB, ChromaDB</span>
               </div>
             </div>
           </div>

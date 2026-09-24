@@ -1,10 +1,15 @@
-﻿/**
+/**
  * AI Engineering Section
  */
 
 import { observeReveal } from '../utils/scrollReveal.js';
 
 const CAPABILITIES = [
+  {
+    icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>',
+    title: 'AI Agents & Tool Calling',
+    desc: 'Building LLM-based agents that dynamically select and invoke tools based on user intent — function calling, multi-step reasoning, and automated workflow execution.',
+  },
   {
     icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a4 4 0 0 1 4 4v1h1a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-8a3 3 0 0 1 3-3h1V6a4 4 0 0 1 4-4z"/><circle cx="12" cy="14" r="2"/></svg>',
     title: 'LLM & Generative AI Integration',
@@ -28,7 +33,7 @@ const CAPABILITIES = [
   {
     icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
     title: 'AI Backend Development',
-    desc: 'Building FastAPI backends that orchestrate AI workflows — async processing, session management, streaming responses, and database integration.',
+    desc: 'Building FastAPI backends that orchestrate AI agent workflows — async processing, session management, streaming responses, and database integration.',
   },
   {
     icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',
@@ -40,15 +45,15 @@ const CAPABILITIES = [
 const FEATURED_PROJECTS = [
   {
     name: 'AI Workspace',
-    category: 'AI Platform',
-    summary: 'Production RAG platform with AI Chat, Knowledge Assistant, Web Search, and automated document workflows.',
-    tags: ['FastAPI', 'OpenAI', 'ChromaDB', 'PostgreSQL', 'Docker', 'AWS'],
+    category: 'AI Agent Platform',
+    summary: 'Production AI platform powered by LLM-based agents and dynamic tool calling — AI Chat, RAG Knowledge Assistant, Web Search, and automated document workflows.',
+    tags: ['AI Agents', 'Tool Calling', 'OpenAI', 'RAG', 'ChromaDB', 'FastAPI', 'PostgreSQL', 'Docker', 'AWS'],
   },
   {
     name: 'AI Time Travel Photobooth',
     category: 'Generative AI',
     summary: 'Generative AI application transforming user photos into historical eras using advanced image generation and prompt engineering.',
-    tags: ['Generative AI', 'Google Gemini', 'Python', 'FastAPI', 'Prompt Engineering'],
+    tags: ['Generative AI', 'Google Gemini', 'Image Generation', 'Prompt Engineering', 'FastAPI'],
   },
 ];
 
@@ -82,10 +87,10 @@ export function createAiEngineering() {
     '<div class="section-header text-center">' +
     '<div class="section-label reveal"><span class="dot"></span>Capabilities</div>' +
     '<h2 class="section-title reveal">AI <span>Engineering</span></h2>' +
-    '<p class="section-subtitle reveal" style="margin: 0 auto; max-width: 660px;">Building practical AI systems by combining Generative AI, LLMs, RAG, prompt engineering, AI APIs, and backend services.</p>' +
+    '<p class="section-subtitle reveal" style="margin: 0 auto; max-width: 660px;">Building practical AI systems — from LLM-based AI agents with dynamic tool calling to Generative AI, RAG, prompt engineering, and production-ready AI backends.</p>' +
     '</div>' +
     '<div class="aie-caps-grid">' + capCardsHTML + '</div>' +
-    '<p class="aie-summary reveal">Experienced in integrating AI models with production applications, developing intelligent workflows, building AI-powered backend services, and deploying scalable AI solutions.</p>' +
+    '<p class="aie-summary reveal">Experienced in building LLM-based AI agents that use dynamic tool calling, developing Generative AI and RAG-powered applications, and deploying intelligent AI backend services at scale.</p>' +
     '<div class="aie-projects-row">' +
     '<p class="aie-projects-label reveal">Applied in production projects:</p>' +
     '<div class="aie-projects-cards reveal">' + projCardsHTML + '</div>' +

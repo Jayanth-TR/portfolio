@@ -3,19 +3,14 @@ import { observeReveal } from '../utils/scrollReveal.js';
 
 const SKILL_GROUPS = [
   {
-    category: 'Generative AI',
+    category: 'AI Agents & Generative AI',
     icon: '🤖',
-    skills: ['Generative AI', 'Text Generation', 'Image Generation', 'AI Model Evaluation', 'AI Workflows'],
+    skills: ['AI Agents', 'Tool Calling', 'Function Calling', 'Generative AI', 'LLMs', 'RAG', 'Prompt Engineering', 'AI Chatbots'],
   },
   {
-    category: 'LLMs & RAG',
-    icon: '🧠',
-    skills: ['Large Language Models', 'RAG Systems', 'Vector Search', 'ChromaDB', 'Embeddings', 'Prompt Engineering'],
-  },
-  {
-    category: 'AI APIs',
+    category: 'AI Platforms & APIs',
     icon: '🔌',
-    skills: ['Google Gemini API', 'OpenAI API', 'Hugging Face API', 'AI API Integration'],
+    skills: ['OpenAI API', 'Google Gemini API', 'Hugging Face API'],
   },
   {
     category: 'Programming',
@@ -25,22 +20,22 @@ const SKILL_GROUPS = [
   {
     category: 'Backend & APIs',
     icon: '⚡',
-    skills: ['FastAPI', 'Node.js', 'Express.js', 'REST APIs', 'API Design'],
+    skills: ['FastAPI', 'Node.js', 'Express.js', 'REST APIs'],
   },
   {
-    category: 'Databases',
+    category: 'Databases & Vector Stores',
     icon: '🗄️',
     skills: ['PostgreSQL', 'MongoDB', 'ChromaDB'],
   },
   {
     category: 'Cloud & Deployment',
     icon: '☁️',
-    skills: ['AWS EC2', 'Docker', 'Cloud Deployment'],
+    skills: ['AWS', 'Docker'],
   },
   {
     category: 'Developer Tools',
     icon: '🛠️',
-    skills: ['Git', 'GitHub', 'Postman', 'VS Code'],
+    skills: ['Git', 'GitHub', 'Postman'],
   },
 ];
 
@@ -71,7 +66,7 @@ export function createSkills() {
         <div class="section-label reveal"><span class="dot"></span>Technical Skills</div>
         <h2 class="section-title reveal">Tools & <span>Technologies</span></h2>
         <p class="section-subtitle reveal" style="margin: 0 auto;">
-          A curated stack built around AI engineering — from model APIs to cloud deployment.
+          A curated stack built around AI engineering — AI Agents, Generative AI, RAG, and cloud deployment.
         </p>
       </div>
 

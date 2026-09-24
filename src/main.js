@@ -31,7 +31,7 @@ const app = document.getElementById('app');
 // ─── Public Portfolio ──────────────────────────────────────────────────────
 
 function renderPortfolio() {
-  document.title = 'Jayanth T R | AI Engineer — Generative AI, LLMs, RAG Systems';
+  document.title = 'Jayanth T R | AI Engineer — AI Agents, Generative AI, LLMs, RAG';
   app.innerHTML = '';
 
   // Navbar

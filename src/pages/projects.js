@@ -7,22 +7,23 @@ const SEED_PROJECTS = [
   {
     _id: 'seed-1',
     title: 'AI Workspace',
-    description: 'Production-ready AI platform designed for business productivity and event management. Combines AI Chat, Web Search, RAG-based document assistance, automated estimate generation, and AI-powered file workflows into a single unified platform.',
+    description: 'Production-ready AI platform for business productivity and event management, powered by LLM-based agents and dynamic tool calling. Implemented LLM-based tool calling that dynamically selects and executes appropriate tools based on user intent, enabling automated multi-step workflows across RAG, web search, document generation, and AI services.',
     features: [
-      'AI Chat with context memory',
-      'RAG-based Knowledge Assistant',
-      'AI-powered Estimate Generator',
+      'AI Chat with dynamic tool selection',
+      'RAG Knowledge Assistant',
+      'Web Search integration',
+      'AI Estimate Generator',
       'AI File Generator',
       'Event Image Enhancer',
       'File Management System',
     ],
-    technologies: ['FastAPI', 'PostgreSQL', 'OpenAI', 'ChromaDB', 'Docker', 'AWS EC2'],
+    technologies: ['AI Agents', 'OpenAI', 'RAG', 'ChromaDB', 'FastAPI', 'PostgreSQL', 'Docker', 'AWS'],
     githubUrl: '',
     demoUrl: '',
     imageUrl: '',
     featured: true,
     published: true,
-    category: 'AI Platform',
+    category: 'AI Agent Platform',
     order: 0,
   },
   {
@@ -36,13 +37,13 @@ const SEED_PROJECTS = [
       'Advanced prompt engineering pipeline',
       'AI image processing workflow',
     ],
-    technologies: ['Generative AI', 'Google Gemini API', 'Python', 'FastAPI'],
+    technologies: ['Generative AI', 'Google Gemini', 'Image Generation', 'Prompt Engineering', 'FastAPI', 'Python'],
     githubUrl: '',
     demoUrl: '',
     imageUrl: '',
     featured: false,
     published: true,
-    category: 'AI / GenAI',
+    category: 'Generative AI',
     order: 1,
   },
 ];
@@ -58,7 +59,7 @@ export function createProjects() {
         <div class="section-label reveal"><span class="dot"></span>Projects</div>
         <h2 class="section-title reveal">AI-Powered <span>Work</span></h2>
         <p class="section-subtitle reveal" style="margin:0 auto;">
-          Real-world AI applications built with modern tools — from RAG platforms to generative image systems.
+          Real-world AI applications — from AI Agent platforms with dynamic tool calling to generative image systems.
         </p>
       </div>
 

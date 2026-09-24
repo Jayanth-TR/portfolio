@@ -10,14 +10,14 @@ const EXPERIENCES = [
     type: 'Full-time',
     current: true,
     highlights: [
-      'Built AI-powered photobooth applications using Generative AI and image generation pipelines',
-      'Integrated Google Gemini, OpenAI, and Hugging Face APIs for AI-driven image transformation',
-      'Developed Python and FastAPI AI backends to serve AI models at scale',
+      'Developed AI-powered applications using Generative AI, Large Language Models, RAG, and LLM-based agents',
+      'Implemented dynamic tool calling where the AI automatically selects and invokes appropriate tools based on user intent without requiring manual tool selection',
+      'Integrated OpenAI, Google Gemini, and Hugging Face APIs for AI-driven image transformation and intelligent content generation',
+      'Built Python and FastAPI AI backends to serve LLM-based agents and AI models at scale',
       'Deployed applications to AWS cloud infrastructure using Docker containers',
-      'Designed and refined prompts for AI image generation and evaluated model outputs',
-      'Implemented AI image processing workflows for historical and futuristic transformations',
+      'Designed and refined prompts for AI image generation and evaluated model outputs across RAG and generative workflows',
     ],
-    tags: ['Generative AI', 'Google Gemini', 'OpenAI', 'Python', 'FastAPI', 'AWS', 'Docker', 'Prompt Engineering'],
+    tags: ['AI Agents', 'Tool Calling', 'LLMs', 'RAG', 'Generative AI', 'OpenAI', 'Google Gemini', 'Python', 'FastAPI', 'AWS', 'Docker'],
     accent: 'blue',
   },
   {
@@ -28,13 +28,13 @@ const EXPERIENCES = [
     type: 'Internship',
     current: false,
     highlights: [
-      'Developed AI chatbot backends using Python, integrating NLP and conversational AI capabilities',
-      'Built React.js-based chatbot UI components for seamless frontend interaction',
-      'Integrated chatbot functionality with REST APIs and backend services',
+      'Developed AI chatbot backends using Python, integrating NLP and conversational AI capabilities for intelligent user interactions',
+      'Built React.js-based chatbot UI components enabling seamless AI-driven frontend interaction',
+      'Integrated chatbot functionality with REST APIs and backend services to power AI-driven workflows',
       'Worked on JavaScript-driven frontend and backend AI integration flows',
       'Contributed to full-stack AI-powered features across the MERN stack',
     ],
-    tags: ['Python', 'AI Chatbot', 'React.js', 'JavaScript', 'REST APIs', 'Node.js'],
+    tags: ['Python', 'AI Chatbot', 'NLP', 'AI-driven Workflows', 'React.js', 'JavaScript', 'REST APIs', 'Node.js'],
     accent: 'violet',
   },
 ];
@@ -103,7 +103,7 @@ export function createExperience() {
         <div class="section-label reveal"><span class="dot"></span>Experience</div>
         <h2 class="section-title reveal">Professional <span>Journey</span></h2>
         <p class="section-subtitle reveal" style="margin:0 auto;">
-          Building AI-powered products from chatbots to generative image systems.
+          Building AI Agents, LLM-powered systems, and generative AI applications in production.
         </p>
       </div>
 
